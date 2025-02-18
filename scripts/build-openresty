@@ -57,7 +57,7 @@ cd /tmp/openresty
 	--with-stream_realip_module \
 	--with-stream_ssl_module \
 	--with-stream_ssl_preread_module \
-	--add-dynamic-module=/tmp/openresty/ngx_http_geoip2_module
+	--add-dynamic-module=/tmp/openresty/ngx_http_geoip2_module \
         --add-dynamic-module=/tmp/openresty/nginx-ntlm-module
 
 make -j2
