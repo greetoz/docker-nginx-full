@@ -15,10 +15,10 @@ export LUA_VERSION=5.1.5
 export LUAROCKS_VERSION=3.3.1
 
 export BASE_IMAGE="${DOCKER_IMAGE}:latest"
-# export ACMESH_IMAGE="${DOCKER_IMAGE}:acmesh"
+export ACMESH_IMAGE="${DOCKER_IMAGE}:acmesh"
 export CERTBOT_IMAGE="${DOCKER_IMAGE}:certbot"
 export CERTBOT_NODE_IMAGE="${DOCKER_IMAGE}:certbot-node"
-# export ACMESH_GOLANG_IMAGE="${DOCKER_IMAGE}:acmesh-golang"
+export ACMESH_GOLANG_IMAGE="${DOCKER_IMAGE}:acmesh-golang"
 
 # Builds
 
