@@ -33,12 +33,12 @@ docker build \
 	-f docker/Dockerfile \
 	.
 
-# echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh ${CYAN}...${RESET}"
-# docker build \
-#	--build-arg BASE_IMAGE \
-#	-t "$ACMESH_IMAGE" \
-#	-f docker/Dockerfile.acmesh \
-#	.
+echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh ${CYAN}...${RESET}"
+docker build \
+	--build-arg BASE_IMAGE \
+	-t "$ACMESH_IMAGE" \
+	-f docker/Dockerfile.acmesh \
+	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot ${CYAN}...${RESET}"
 docker build \
@@ -47,12 +47,12 @@ docker build \
 	-f docker/Dockerfile.certbot \
 	.
 
-# echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh-golang ${CYAN}...${RESET}"
-# docker build \
-# 	--build-arg ACMESH_IMAGE \
-# 	-t "$ACMESH_GOLANG_IMAGE" \
-# 	-f docker/Dockerfile.acmesh-golang \
-# 	.
+echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh-golang ${CYAN}...${RESET}"
+docker build \
+ 	--build-arg ACMESH_IMAGE \
+ 	-t "$ACMESH_GOLANG_IMAGE" \
+ 	-f docker/Dockerfile.acmesh-golang \
+ 	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot-node ${CYAN}...${RESET}"
 docker build \
