@@ -7,7 +7,7 @@ GREEN='\E[1;32m'
 RESET='\E[0m'
 
 REGISTRY=${REGISTRY:-}
-DOCKER_IMAGE="${REGISTRY}nginxproxymanager/nginx-full"
+DOCKER_IMAGE="${REGISTRY}greetoz/npm-ntlm-nginxfull"
 
 export OPENRESTY_VERSION=1.25.3.2
 export CROWDSEC_OPENRESTY_BOUNCER_VERSION=0.1.7
