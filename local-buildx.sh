@@ -42,16 +42,6 @@ docker buildx build \
 	-f docker/Dockerfile \
 	.
 
-echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh ${CYAN}...${RESET}"
-docker buildx build \
-	--platform "$PLATFORMS" \
-	--progress plain \
-	--push \
-	--build-arg BASE_IMAGE \
-	-t "$ACMESH_IMAGE" \
-	-f docker/Dockerfile.acmesh \
-	.
-
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot ${CYAN}...${RESET}"
 docker buildx build \
 	--platform "$PLATFORMS" \
@@ -60,16 +50,6 @@ docker buildx build \
 	--build-arg BASE_IMAGE \
 	-t "$CERTBOT_IMAGE" \
 	-f docker/Dockerfile.certbot \
-	.
-
-echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh-golang ${CYAN}...${RESET}"
-docker buildx build \
-	--platform "$PLATFORMS" \
-	--progress plain \
-	--push \
-	--build-arg ACMESH_IMAGE \
-	-t "$ACMESH_GOLANG_IMAGE" \
-	-f docker/Dockerfile.acmesh-golang \
 	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot-node ${CYAN}...${RESET}"
