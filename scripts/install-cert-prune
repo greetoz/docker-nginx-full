@@ -30,8 +30,8 @@ echo -e "${BLUE}❯ ${CYAN}Installing cert-prune v${CERT_PRUNE_VERSION} for ${YE
 
 mkdir -p /tmp/cert-prune
 cd /tmp/cert-prune
-wget "https://github.com/axllent/cert-prune/releases/download/${CERT_PRUNE_VERSION}/cert-prune-linux-${ARCH}.tar.gz"
-tar -xzf 'cert-prune-linux-${ARCH}.tar.gz'
+wget "https://github.com/axllent/cert-prune/releases/download/0.0.1/cert-prune-linux-amd64.tar.gz"
+tar -xzf 'cert-prune-linux-amd64.tar.gz'
 mv cert-prune /bin/
 rm -rf /tmp/cert-prune
 
