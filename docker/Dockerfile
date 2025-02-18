@@ -99,8 +99,8 @@ RUN apt-get update \
 
 LABEL org.label-schema.schema-version="1.0" \
 	org.label-schema.license="MIT" \
-	org.label-schema.name="nginx-full" \
+	org.label-schema.name="npm-ntlm-nginxfull" \
 	org.label-schema.description="A base image for use by Nginx Proxy Manager" \
-	org.label-schema.url="https://github.com/nginxproxymanager/docker-nginx-full" \
-	org.label-schema.vcs-url="https://github.com/nginxproxymanager/docker-nginx-full.git" \
-	org.label-schema.cmd="docker run --rm -ti nginxproxymanager/nginx-full:latest"
+	org.label-schema.url="https://github.com/greetoz/docker-nginx-full" \
+	org.label-schema.vcs-url="https://github.com/greetoz/docker-nginx-full.git" \
+	org.label-schema.cmd="docker run --rm -ti greetoz/npm-ntlm-nginxfull:latest"
