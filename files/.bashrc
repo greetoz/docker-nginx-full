@@ -15,7 +15,7 @@ alias h='cd ~;clear;'
 . /etc/os-release
 
 echo -e -n '\E[1;34m'
-figlet -w 120 "nginx-full"
+figlet -w 120 "npm-ntlm-nginxfull"
 echo -e "\E[1;36mOpenResty \E[1;32m${OPENRESTY_VERSION:-unknown}\E[1;36m, ${ID:-debian} \E[1;32m${VERSION:-unknown}\E[1;36m\E[0m"
 echo -e -n '\E[1;34m'
 cat /built-for-arch
