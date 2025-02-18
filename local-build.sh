@@ -31,6 +31,7 @@ docker build \
 	--build-arg LUAROCKS_VERSION \
 	-t "$BASE_IMAGE" \
 	-f docker/Dockerfile \
+        --output type=docker \
 	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh ${CYAN}...${RESET}"
@@ -38,6 +39,7 @@ docker build \
 	--build-arg BASE_IMAGE \
 	-t "$ACMESH_IMAGE" \
 	-f docker/Dockerfile.acmesh \
+         --output type=docker \
 	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot ${CYAN}...${RESET}"
@@ -45,6 +47,7 @@ docker build \
 	--build-arg BASE_IMAGE \
 	-t "$CERTBOT_IMAGE" \
 	-f docker/Dockerfile.certbot \
+         --output type=docker \
 	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}acmesh-golang ${CYAN}...${RESET}"
@@ -52,6 +55,7 @@ docker build \
  	--build-arg ACMESH_IMAGE \
  	-t "$ACMESH_GOLANG_IMAGE" \
  	-f docker/Dockerfile.acmesh-golang \
+        --output type=docker \
  	.
 
 echo -e "${BLUE}❯ ${CYAN}Building ${YELLOW}certbot-node ${CYAN}...${RESET}"
@@ -59,6 +63,7 @@ docker build \
 	--build-arg CERTBOT_IMAGE \
 	-t "$CERTBOT_NODE_IMAGE" \
 	-f docker/Dockerfile.certbot-node \
+        --output type=docker \
 	.
 
 echo -e "${BLUE}❯ ${GREEN}All done!${RESET}"
