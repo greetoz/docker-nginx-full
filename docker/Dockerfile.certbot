@@ -13,6 +13,7 @@ RUN apt-get install -y \
 	build-essential \
 	ca-certificates \
 	curl \
+	wget \
 	libaugeas0 \
 	libffi-dev \
 	libssl-dev \
